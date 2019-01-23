@@ -1,0 +1,290 @@
+body {
+    background-color: #fff7e9;
+  }
+  
+  ul {
+    list-style-type: none;
+    margin-top: -30px;
+    padding: 0;
+    overflow: hidden;
+  }
+  
+  li {
+    display: inline-block;
+  }
+  
+  li > a {
+    display: flex;
+    position: relative;
+    color: #474554;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Bungee Inline;
+    font-size: 50px;
+  }
+  
+  li > a:hover {
+    color: #d583ac;
+  }
+  
+  li > span {
+    display: flex;
+    color: #474554;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: Bungee Inline;
+    font-size: 50px;
+    cursor: pointer;
+    /*   position: relative;
+    overflow: visible; */
+  }
+  
+  li > span:hover {
+    color: #d583ac;
+  }
+  
+  li > span:hover .dropdown {
+    display: block;
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: none;
+    margin-top: 105px;
+    /*   overflow: visible; */
+  }
+  
+  .ddone,
+  .ddtwo,
+  .ddthree {
+    display: inline-block;
+    min-width: 100px;
+    padding: 12px 16px;
+    z-index: 1;
+    position: relative;
+    background-color: #fffaf7;
+    left: 0px;
+    vertical-align: top;
+    height: 318px;
+  }
+  
+  .ddone > p,
+  .ddtwo > p,
+  .ddthree > p {
+    color: #474554;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    cursor: default;
+  }
+  
+  p > a {
+    color: #aca7cb;
+    font-size: 20px;
+    margin-top: -10px;
+    margin-bottom: -20px;
+    text-decoration: none;
+  }
+  
+  .choco > p,
+  .fruity > p,
+  .gummy > p {
+    font-family: Source Sans Pro;
+    font-size: 22px;
+    margin: 6px;
+    margin-top: 20px;
+    color: #aca7cb;
+  }
+  
+  .text {
+    margin-top: -30px;
+    margin-left: 45px;
+    color: #fefedf;
+    font-size: 15px;
+    font-family: Raleway;
+  }
+  
+  .mySlides > img {
+    border-radius: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    vertical-align: bottom;
+  }
+  
+  .slideshow-container {
+    position: relative;
+    margin: auto;
+    margin-top: 20px;
+    width: 70%;
+  }
+  
+  .dot {
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active {
+    background-color: #474554;
+  }
+  
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 4s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 4s;
+  }
+  
+  @-webkit-keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    86% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    86% {
+      opacity: 0.8;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  #f1 {
+    -webkit-animation-delay: -4s;
+  }
+  #f2 {
+    -webkit-animation-delay: -4s;
+  }
+  #f3 {
+    -webkit-animation-delay: -4s;
+  }
+  
+  #f4 {
+    -webkit-animation-delay: -4s;
+  }
+  
+  footer {
+    text-align: center;
+    margin-top: 30px;
+    font-family: Bungee Inline;
+    color: #474554;
+  }
+  
+  hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-top: 40px;
+    font-family: Bungee Inline;
+    color: #474554;
+    font-size: 50px;
+    margin-bottom: -60px;
+  }
+  
+  .fish,
+  .spk,
+  .twix {
+    display: inline-block;
+    vertical-align: bottom;
+    position: relative;
+    width: 20%;
+    margin: 32px;
+  }
+  
+  .favorites {
+    text-align: center;
+  }
+  
+  .bottom {
+    background-color: #DDE8DF;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-bottom: -20px;
+  }
+  
+  .fish {
+    margin-top: 50px;
+  }
+  
+  .fish > img {
+    cursor: pointer;
+    margin-top: -65px;
+  }
+  
+  .fish > h3 {
+    color: #7193e9;
+    font-family: Bungee Inline;
+    font-size: 31px;
+  }
+  
+  .spk > img {
+    cursor: pointer;
+    width: 120%;
+  }
+  
+  .spk > h3 {
+    color: #f19aa2;
+    font-family: Bungee Inline;
+    font-size: 40px;
+  }
+  
+  
+  .twix {
+    margin-left: 70px;
+  }
+  
+  .twix > img {
+    cursor: pointer;
+    width: 90%;
+    margin-bottom: 20px;
+  }
+  
+  .twix > h3 {
+    font-family: Bungee Inline;
+    font-size: 31px;
+    color: #abd19b;
+    margin-bottom: -30px;
+  }
+  
