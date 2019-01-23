@@ -1,5 +1,136 @@
 <!doctype html>
+
 <html>
-<head></head>
-<body>Hello</body>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Source+Sans+Pro|Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <header>
+    <ul>
+      <li><a href="#"><img src="https://i.dlpng.com/static/png/37767_preview.png" width="40px" height="40%"></a></li>
+      <li>
+        <span>
+          <span>Candies</span>
+        <div class="dropdown">
+
+          <div class="ddone">
+            <p>Chocolate</p>
+            <div class="choco">
+              <p><a href="#">M&M'S</a></p>
+              <p><a href="#">Reeces</a></p>
+              <p><a href="#">Hersheys</a></p>
+              <p><a href="#">Twix</a></p>
+              <p><a href="#">Snickers</a></p>
+              <p><a href="#">Kit Kat</a></p>
+            </div>
+          </div>
+          <div class="ddtwo">
+            <p>Fruity</p>
+            <div class="fruity">
+              <p><a href="#">Jolly Rancher</a></p>
+              <p><a href="#">Skittles</a></p>
+              <p><a href="#">Starbust</a></p>
+              <p><a href="#">Life Saver</a></p>
+            </div>
+          </div>
+          <div class="ddthree">
+            <p>Gummy</p>
+            <div class="gummy">
+              <p><a href="#">Haribo</a></p>
+              <p><a href="#">Airhead</a></p>
+              <p><a href="#">Sour Patch</a></p>
+              <p><a href="#">Swedish Fish</a></p>
+              <p><a href="#">Twizzlers</a></p>
+            </div>
+          </div>
+        </div>
+        </span>
+      </li>
+      <li><a href="#">Arbor</a></li>
+      <li><a href="#">About Us</a></li>
+    </ul>
+  </header>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <img id="f1" src="https://images.unsplash.com/photo-1523872352054-4d35b4c058f0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+      <div class="text">by @rawpixel on Unsplash</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img id="f2" src="https://images.unsplash.com/photo-1533602933119-70608e48905d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+      <div class="text">by @craigheadshots on Unsplash</div>
+    </div>
+
+    <div class="mySlides fade" id="1">
+      <img id="f3" src="https://images.unsplash.com/photo-1542843137-8791a6904d14?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80" style="width:100%">
+      <div class="text">by @amir_v_ali on Unsplash</div>
+    </div>
+
+    <div class="mySlides fade">
+      <img id="f4" src="https://images.unsplash.com/photo-1534408964827-4db8a406427f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1951&q=80" style="width:100%">
+      <div class="text">by @rawpixel on Unsplash</div>
+    </div>
+
+  </div>
+  <br>
+
+  <div style="text-align:center">
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+    <span class="dot"></span>
+  </div>
+
+  <script>
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 3000); // Change image every 2 seconds 
+    }
+  </script>
+  <div class="bottom">
+  <div class="favorites">
+    <h2>Most Popular</h2>
+    <div class="fish">
+      <h3>#2</h3>
+      <img src="https://cdn.shopify.com/s/files/1/0972/7116/products/swedish-fish-bags-original-soft-_-chewy-candy-2-oz-bag.png?v=1467143941" width="100%">
+    </div>
+    <div class="spk">
+      <h3># 1</h3>
+      <img src="https://emmaspremiumservices.com/wp-content/uploads/2017/02/G016.png" width="100%">
+    </div>
+    <div class="twix">
+      <h3>#3</h3>
+      <img src="http://static1.squarespace.com/static/57e0127d2994ca976a7f74b5/5882793d9de4bb2bd862319c/5826951c03596e58b67cf28c/1478923549758/twix.png" width="100%">
+    </div>
+  </div>
+  <footer>
+    <hr> © Candies 2019
+  </footer>
+    </div>
+</body>
+
 </html>
