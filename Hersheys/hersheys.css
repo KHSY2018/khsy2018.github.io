@@ -1,0 +1,181 @@
+body{
+    background: #ffa0ad;
+    padding: 20px;
+  }
+  
+  header{
+    width: 100%;
+    height: 40px;
+    border: 2px solid black;
+    margin-bottom: 20px;
+  }
+  
+  main  {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  #candy {
+    display: inline-block;
+    width: 50%;
+    background: #ffd5d5;
+    height: auto;
+    padding: 15px 15px 40px 15px;
+    box-sizing: border-box;
+  }
+
+  #picbox {
+    width: 40%;
+    margin: 0 auto;
+  }
+  
+  #pic {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  #review {
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  h1 /* candy name */ {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 50px;
+    font-family: 'Coiny', cursive;
+  }
+  
+  h2 /* pic citation */ {
+    font-size: 8px;
+    margin-top: 5px;
+    display: inline-block;
+    opacity: .5;
+    font-family: sans-serif;
+  }
+  
+  h3 /* Sidebar headers */ {
+    font-size: 40px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+  
+  h4 /* candy type */ {
+    text-align: center;
+    margin-top: -20px;
+    font-size: 28px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  h5:not(#rating) /* subheaders (Ex. "Origin") */ {
+    font-size: 25px;
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  h6 /* sidebar subheaders */ {
+    font-size: 20px;
+    margin-left: 5%;
+    margin-bottom: 0px;
+    margin-top: 5px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+#recommend > a {
+    text-align: center;
+    margin-bottom: 20px;
+    color: red;
+}
+
+  p /* paragraph text */ {
+    width: 80%;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a:not(#candyrec) {
+    display: block;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #509be1;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: 'Roboto', sans-serif;
+  }
+
+  a {
+    word-wrap: break-word;
+  }
+
+  #candyrec {
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #2a5396;
+  }
+
+  #rating {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+  #stars  {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+  }
+  
+  .sidebar {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 30%;
+    background-color: #ffd5d5;
+    height: auto;
+    padding: 10px;
+  }
+
+  nav  {
+    margin-bottom: 60px;
+  }
+
+  #recpic   {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  @media only screen and (max-width: 650px) {
+    
+    .sidebar, .sidebar * {
+      display: none;
+    }
+    
+    #candy  {
+      width: 90%;
+    }
+    
+    #pic  {
+      width: 400px;
+    }
+    
+    #picbox {
+      width: 400px;
+      margin: 0 auto;
+    }
+    
+    h2  {
+      margin-left: 0px;
+    }
+    
+  }
